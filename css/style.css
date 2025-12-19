@@ -1,0 +1,114 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    background-color: #f5f6f8;
+    color: #333;
+}
+
+/* Header */
+.header {
+    background: #1f2933;
+    color: #fff;
+    padding: 1.5rem 1rem;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 1.5rem;
+}
+
+.header p {
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
+}
+
+/* Resumo */
+.resumo {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.card {
+    background: #fff;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.card h3 {
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 0.5rem;
+}
+
+.card span {
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+/* Tabela */
+.tabela-section h2 {
+    margin-bottom: 1rem;
+}
+
+.tabela-wrapper {
+    overflow-x: auto;
+}
+
+.tabela {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.tabela th,
+.tabela td {
+    padding: 0.75rem;
+    text-align: left;
+    font-size: 0.85rem;
+}
+
+.tabela th {
+    background: #e5e7eb;
+    font-weight: 600;
+}
+
+.tabela tr:nth-child(even) {
+    background: #f9fafb;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    font-size: 0.75rem;
+    color: #666;
+    padding: 1rem;
+}
+
+/* Desktop */
+@media (min-width: 768px) {
+    .resumo {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .header h1 {
+        font-size: 2rem;
+    }
+}

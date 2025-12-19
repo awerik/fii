@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Carteira de FIIs</title>
+
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+
+    <header class="header">
+        <h1>Minha Carteira de FIIs</h1>
+        <p>Acompanhamento de dividendos e patrimônio</p>
+    </header>
+
+    <main class="container">
+
+        <section class="resumo">
+            <div class="card">
+                <h3>Total Investido</h3>
+                <span id="totalInvestido">R$ --</span>
+            </div>
+
+            <div class="card">
+                <h3>Dividendos Mensais</h3>
+                <span id="dividendosMensais">R$ --</span>
+            </div>
+
+            <div class="card">
+                <h3>DY Médio</h3>
+                <span id="dyMedio">-- %</span>
+            </div>
+        </section>
+
+        <section class="tabela-section">
+            <h2>Fundos Imobiliários</h2>
+
+            <div class="tabela-wrapper">
+                <table class="tabela">
+                    <thead>
+                        <tr>
+                            <th>FII</th>
+                            <th>Preço</th>
+                            <th>Último Dividendo</th>
+                            <th>DY</th>
+                            <th>Data Com</th>
+                            <th>Tipo</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabelaFIIs">
+                        <!-- dados entrarão via JS -->
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>Dados fornecidos por DadosDeMercado</p>
+    </footer>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
